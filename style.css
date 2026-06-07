@@ -191,6 +191,53 @@ body {
     }
 }
 
+/* How It Works Banner Section */
+.how-it-works-banner {
+    margin: 2rem 0;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid var(--color-brand-yellow);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+.how-it-works-banner .vehicle-ads-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 250px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.how-it-works-banner:hover .vehicle-ads-img {
+    opacity: 1;
+}
+
+.how-it-works-banner .vehicle-ads-caption {
+    background-color: var(--color-brand-yellow);
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+}
+
+.how-it-works-banner .vehicle-ads-caption h3 {
+    color: var(--color-bg-dark);
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    .how-it-works-banner .vehicle-ads-caption h3 {
+        font-size: 1.2rem;
+    }
+}
+
 /* Three Main Cards (No Delivery, No Target, No Timing) */
 .features-grid {
     display: grid;
